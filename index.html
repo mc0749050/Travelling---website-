@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Safe-Travel</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik+Scribble&display=swap" rel="stylesheet">
+  </head>
+   <body>
+
+<div id="allow-display" class="audio-allow">
+  <p>You want <span>Music</span> on background ?</p>
+  
+  <div id="a-allow">
+  <button onclick="allow()" id="yes">Yes</button>
+  <button onclick="deny()" id="no">No</button>
+  </div>
+  
+  <audio id="song-s" src="song.mp3" loop></audio>
+</div>
+    
+     
+    <div class="container">
+      <!-- Creating a SVG image -->
+      <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+  
+        <path d="M0, 100 C150, 200 350,
+                  0 500, 100 L500, 00 L0, 0 Z" style="stroke:none; fill:#010101;">
+          
+          
+           <img src="img/logo.png" alt="logo.png">
+           
+           <a href="#destination">Explore</a>
+           
+           <i onclick="profile()" class="fa-regular fa-circle-user"></i>
+           
+           
+       
+        </path>
+      </svg>
+    </div>
+
+ <div class="head-img">
+   <img id="head-img" src="img/head.png" alt="website">
+   <img id="head-logo" src="img/head-aeroplane-logo.png" alt="logo">
+   
+   <h2>Explore your world !</h2>
+ </div>
+
+  <div class="text-body">
+    <h2>Our services</h2>
+    
+    <hr>
+    <p>
+      we are committed to providing you with exceptional travel experiences that are tailored to your desires and interests. Our wide range of services is designed to make your journey memorable and stress-free.
+    </p>
+    <hr>
+  </div>
+ 
+ 
+ <div id="profile-body" class="profile-body">
+    
+  <form>
+  <div>
+    <div id="img-preview"></div>
+    <input type="file" id="choose-file" name="choose-file" accept="image/*"/> 
+      <label for="choose-file"><i class="fa-solid fa-camera"></i></label>
+     
+  </div>
+</form>
+    
+    <p id="username">Your Name</p>
+    <p id="UserPhoneNumber">9352XXXXXX</p>
+    <a onclick="changeFon()" href="#">Change</a>
+    
+    <div id="profile-icon">
+      <a href="https://www.instagram.com/mukeshjaat_20?igsh=ZjB4NTdsNG0xdGVm"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.link/ty4rt2"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="tel:9352577689"><i class="fa-solid fa-phone"></i></a>
+    </div>
+      
+   <div id="profile-background"></div>
+ </div>
+ 
+
+<div id="change-body" class="change-body">
+  
+  <i onclick="changeFoff()" class="fa-regular fa-circle-xmark"></i>
+  
+  <img id="change-img" src="https://img.freepik.com/premium-vector/business-development-illustration-collection-scenes-with-men-taking-part-business_537404-976.jpg?w=740" alt="User ID">
+  
+  <form>
+  <div class="input-field">
+    <label for="Name">Enter your name :</label> <br>
+    <input id="Name" type="text" required><br>
+    <label for="phone">Enter your mobile number :</label><br>
+    
+   <input type="number" id="phone" name="phone" required><br>
+    <a onclick="change()" href="#">Submit</a>
+  </div>
+  </form>
+</div>
+
+<div class="img1">
+  <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+</div>
+
+<div class="facility">
+  <div class="left">
+    <i class="fa-solid fa-utensils"></i>
+    <h4>Restaurant & Room</h4>
+    <p>Our elegant hall is perfect for weddings parties, and events. Book now for a memorable gathering filled with style and charm.</p>
+  </div>
+  <div class="right">
+    <i class="fa-solid fa-phone-volume"></i>
+    <h4>24/7 support </h4>
+    <p>We're here around the clock to assist you. Whether it's day or night, your needs are our priority. Reach out anytime, and we'll be ready to help.</p>
+  </div>
+</div>
+
+<div id="destination" class="destination">
+  <h5>Popular Destination</h5>
+ 
+ <div class="image-slideshow">
+
+         <div class="image fade">
+ 
+     <img src="https://images.unsplash.com/photo-1534113414509-0eec2bfb493f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+ 
+   </div>
+
+ 
+   <div class="image fade">
+ 
+     <img src="https://images.pexels.com/photos/20153777/pexels-photo-20153777/free-photo-of-view-of-illuminated-skyscrapers-in-downtown-dubai-uae.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="width:100%">
+ 
+   </div>
+   
+   
+   
+      <div class="image fade">
+   
+        <img src="https://images.pexels.com/photos/342113/pexels-photo-342113.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="width:100%">
+   
+      </div>
+     
+      
+         <div class="image fade">
+      
+           <img src="https://images.pexels.com/photos/13979460/pexels-photo-13979460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="width:100%">
+      
+         </div>
+         
+         
+            <div class="image fade">
+         
+              <img src="https://images.pexels.com/photos/9605458/pexels-photo-9605458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="width:100%">
+         
+            </div>
+            
+   
+            
+               <div class="image fade">
+            
+                 <img src="https://images.pexels.com/photos/8343731/pexels-photo-8343731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="width:100%">
+            
+               </div>
+    </div>
+    
+     <div style="text-align:center">
+   <span class="dot"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+ </div>
+ 
+ <p>Travelling is an amazing way to learn a lot of things in life. A lot of people around the world travel every year to many places. Moreover, it is important to travel to humans. </p>
+</div>
+
+<div class="signature">
+  <p>Mukesh</p>
+</div>
+
+
+<div class="footer">
+  <h5>About</h5>
+  
+  <i id="f-icon" class="fa-solid fa-earth-americas"></i>
+  
+  <p>Disclaimer: <br>  
+  airoassist.com is an independent travel portal. Its parent company is Holidayxpert Ltd. The information that's displayed on this website, www. airoassist.com, is for general purposes. All the necessary steps have been taken to ensure that the information displayed in the website is accurate and up- to-date. However, under no circumstance, We do not provide any warranty or representation.</p>
+  
+  
+  <div class="footer-icon">
+   
+
+    
+
+    
+    <a href="https://wa.link/ty4rt2"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.instagram.com/mukeshjaat_20?igsh=ZjB4NTdsNG0xdGVm"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61553371077892&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+  </div>
+  
+  <div class="footer-foot">
+  © 2023 world travel Toure 
+  </div>
+  
+</div>    
+
+<script src="main.js">main.js</script> 
+</body>
+</html>
