@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="explore.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+  
+  <div id="searchDiv" class="searchdiv">
+    <input id="inputuser" type="text" placeholder="Explore rajasthan district">
+   <p id="error">Only rajsthan city's available !</p>
+    <button onclick="searchfun()">Explore</button>
+  </div>
+  
+  
+  <div class="maincontainer">
+    <div class="searchcity">
+      <img src="logo.png" alt="logo.png">
+      <i id="searchopendivbtn" class="fa-solid fa-magnifying-glass"></i>
+      <i onclick="notificationon()" class="fa-solid fa-bell"></i>
+    </div>
+    <div class="cityimg">
+      <img id="imagepage" src="jaipur.jpg" alt="">
+    </div>
+    <p class="cityname" id="pagecityname">Jaipur</p>
+    
+    <div class="aboutcity">
+    <p id="pageparagraph">
+      Jaipur, the capital city of Rajasthan,
+      is a captivating blend of old-world charm and modern vibrancy. Founded in 1727 by Maharaja Sawai Jai Singh II, Jaipur is known for its rich history, stunning architecture, and cultural heritage. Often referred to as the "Pink City" due to the distinct color of its buildings, Jaipur is a treasure trove of royal palaces, ancient forts, and bustling bazaars.
+    </p>
+   </div>
+   
+   <button class="tripbtn" onclick="maketripdivon()">Make a Trip For <span id="tripcity">Jaipur</span></button>
+   
+   
+   <div class="otherdetails">
+     <p>Architectural Marvels:Amber Fort: A magnificent fort known for its artistic Hindu style elements and panoramic views.Hawa Mahal: The "Palace of Winds" with its unique five-story exterior akin to the honeycomb of a beehive.City Palace: A complex of courtyards, gardens, and buildings right in the heart of the old city.Cultural Significance:Festivals: Jaipur is renowned for its colorful festivals such as Diwali, Teej, and the Jaipur Literature Festival.Handicrafts: The city is famous for its traditional crafts, including jewelry, textiles, and pottery.Culinary Delights:Traditional Rajasthani cuisine includes dishes like Dal Baati Churma, Ghewar, and Laal Maas.Historical Importance:Founded in 1727 by Maharaja Sawai Jai Singh II, Jaipur was one of the first planned cities in India, designed according to Vastu Shastra (traditional Indian architecture).Modern Attractions:Jantar Mantar: An astronomical observatory with the world's largest stone sundial.Nahargarh Fort: Offers stunning views of the cityscape and a glimpse into the royal history.Jaipur's blend of historical charm and modern vibrancy makes it a must-visit destination for travelers interested in exploring India's rich heritage.</p>
+   </div>
+   
+   <div class="footer">
+     <img src="mukesh.jpg" alt="">
+     <p class="logoname">Travel Romio</p>
+     <p>Founder: Mukesh Kumar</p>
+     <p>5+ Years Experience</p>
+     <p>Contact: <a href="tel:+9352577689">+919352577689</a></p>
+     
+     <div class="footerfoot">
+       <p>© Travel Romio | All Rights Reserved</p>
+     </div>
+   </div>
+   
+  </div>
+  
+  
+  
+  <div class="maketripdiv" id="maketripdiv">
+    <i onclick="maketripdivoff()" class="fa-solid fa-xmark"></i>
+    
+    <p>Travel Romio</p>
+    
+    
+  <form action="https://api.web3forms.com/submit" method="POST" id="form"> 
+  
+  <input type="hidden" name="access_key" value="4e5bcd03-dc65-4fc8-9cc7-fdb68393021b">
+      <input type="hidden" name="redirect" value="https://web3forms.com/success">
+<div class="inputdiv" >
+  <input id="name" type="text" name="name" placeholder="Enter Your Full Name" required> <br>
+  <input id="email" type="email" name="email" placeholder="Enter Your active Email" required> <br>
+  <input id="city" type="text" name="city"  placeholder="Enter Visiting Place" required> <br>
+  <input id="ph" type="number" name="PhoneNo." placeholder="Enter Your Phone Number" required> <br>
+  <input id="num" type="number" name="TotalMembers" placeholder="Enter Trip Member" required> <br>
+ 
+</div> 
+    
+    <button onclick="sendMail()" type="submit">Submit</button>
+    
+ </form>
+  </div>
+  
+  
+  <div id="notificationdiv" class="notificationdiv">
+    <i id="i" onclick="notificationoff()" class="fa-solid fa-xmark"></i>
+    
+    <i id="nobell" class="fa-solid fa-bell-slash"></i>
+    
+    <p id="nonotif">No Notification Yet !</p>
+   
+   <!--  <div class="notification">
+     <div id="notification-head">
+   <p id="time"><span id="hour">02</Span>:<span id="minute">16</span></p>
+   <i class="fa-solid fa-xmark"></i>
+   </div>
+   <p id="massage">Your <span id="massagecity">Jaipur</span> trip request has been submitted, Our team will be contact you soon.</p>
+   </div> -->
+    
+</div>
+
+<div id="requestsubmit" class="requestsubmit">
+  <p>Your request has been submitted.</p>
+</div>
+
+  </div>
+  <script src="explore.js">main.js</script>
+  <script src="city.js">city.js</script>
+</body>
+</html>

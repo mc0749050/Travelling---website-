@@ -1,0 +1,318 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.searchdiv{
+  background-color: #B9BFFF;
+  width: 100vw;
+  height: 100vh;
+  background: url(searchbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 500;
+  overflow: hidden;
+}
+.searchdiv input{
+  width: 76vw;
+  height: 38px;
+  margin-left: 9vw;
+  margin-top: 30vh;
+  border: 0.5px solid #FFFFFF94;
+  background: #FFFFFF00;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #FFFFFF;
+  padding-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.searchdiv input::placeholder{
+  font-size: 15px;
+  font-weight: 300;
+  padding-top: 5px;
+  color: #FFFFFF7A;
+}
+.searchdiv button{
+  width: 82vw;
+  height: 38px;
+  margin-left: 9vw;
+  font-size: 18px;
+  color: #FFFFFF;
+  border: none;
+  background-color: #A40101;
+  font-weight: 500;
+  border-radius: 2px;
+  margin-top: 25px;
+  text-align: center;
+}
+.searchdiv button:hover{
+  background-color: #000000;
+}
+.searchdiv p{
+  color: #FF0000;
+  font-weight: 300;
+  font-size: 12px;
+  margin-left: 10vw;
+  margin-top: 8px;
+  animation-name: blowerror;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  visibility: hidden;
+}
+
+@keyframes blowerror{
+  0%{
+    font-size: 12px;
+    color: #FF0000;
+    
+  }
+  50%{
+    font-size: 12.5px;
+    color: #6F1313;
+  }
+  100%{
+    font-size: 12px;
+  }
+}
+body{
+  background: #171717;
+}
+.maincontainer .cityimg{
+  width: 100vw;
+  height: 40vh;
+}
+.cityimg img{
+  width: 95%;
+  box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 4px;
+  margin-top: 20px;
+  margin-left: 2.5vw;
+  border-radius: 5px;
+}
+.searchcity{
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: right;
+}
+.searchcity i{
+  color: #FFFFFF;
+  font-size: 25px;
+  padding: 17px;
+}
+.searchcity img{
+  margin-right: 180px;
+  height: 100px;
+  padding: 0px;
+  margin-top: -20px;
+}
+.cityname{
+  color: #FFFFFF;
+  font-size: 30px;
+  text-align: center;
+}
+.aboutcity{
+  color: #FFFFFF;
+  font-size: 15px;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-top: 20px;
+  text-indent: 18px;
+}
+.aboutcity p{
+  line-height: 25px;
+  word-spacing: 1px;
+}
+.tripbtn{
+  width: 80vw;
+  height: 35px;
+  border: none;
+  color: #FFFFFF;
+  background:  #A40101;
+  margin-left: 10vw;
+  margin-top: 25px;
+  border-radius: 4px;
+}
+.tripbtn:hover{
+  background: #FFFFFF;
+  color: #000000;
+}
+.otherdetails{
+  width: 90vw;
+  margin-left: 5vw;
+  color: #FFFFFF;
+  line-height: 25px;
+  word-spacing: 1px;
+  text-indent: 18px;
+  font-size: 15px;
+  margin-top: 40px;
+}
+.footer{
+  width: 100vw;
+  height: 30vh;
+  background-color: #303030;
+  margin-top: 100px;
+}
+.footer img{
+  width: 23vw;
+  height: 23vw;
+  border-radius: 50%;
+  margin-top: 20px;
+ margin-left: 38vw;
+ border: 1px solid#FFFFFF;
+}
+.footer p{
+  color: #FFFFFF;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+}
+.footer a{
+  color: #8AB0FF;
+}
+.footerfoot{
+  background-color: #272727;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+}
+.footerfoot p{
+  padding: 10px 0px;
+}
+.maketripdiv{
+  width: 100vw;
+  height: 100vh;
+  background: #FFFFFF;
+  position: fixed;
+  top: 0px;
+  display: none;
+}
+.maketripdiv i{
+  font-size: 40px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.maketripdiv p{
+  font-size: 35px;
+  font-weight: 700;
+  font-family: cursive;
+  color: #AB0909;
+  text-align: center;
+  margin-top: 50px;
+}
+.inputdiv{
+  margin-top: 60px;
+}
+.inputdiv input{
+  width: 75vw;
+  height: 35px;
+  padding: 0px 2.5vw;
+  margin-left: 10vw;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+.maketripdiv button{
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 50px;
+  height: 40px;
+  border: none;
+  color: #ffffff;
+  background-color: #A50606;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.notificationdiv{
+  width: 100vw;
+  height: 100vh;
+  background: #FFFFFF;
+  position: fixed;
+  top: 0px;
+  display: none;
+}
+.notification{
+  width: 90vw;
+  height: 100px;
+  margin-left: 5vw;
+  margin-top: 70px;
+  border-radius: 5px;
+  border: 0.5px solid #424242;
+  
+}
+#notification-head{
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 0.5px solid #424242;
+}
+#time{
+  margin-left: 17px;
+  font-size: 20px;
+  margin-top: 5px;
+  font-weight: 300;
+  color: #3E3E3E;
+}
+#notification-head i{
+  margin-right: 17px;
+  margin-top: 5px;
+  font-size: 25px;
+  color: #3E3E3E;
+}
+#massage{
+  font-size: 13px;
+  padding: 20px;
+}
+#i{
+  font-size: 35px;
+  position: absolute;
+  color: #363636;
+  right: 15px;
+  top: 15px;
+}
+.requestsubmit{
+  width: 80vw;
+  position: absolute;
+  top: 0px;
+  margin-left: 10vw;
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 8px 8px;
+  border: 0.5px solid #232323;
+  text-align: center;
+  padding: 20px 0px;
+  color: #C70000;
+  animation-name: fade;
+  animation-duration: 4s;
+  top: -70px;
+  display: none;
+}
+
+@keyframes fade{
+  0%{
+    top: -70px;
+  }
+  50%{
+    top: 0px;
+  }
+  100%{
+    top: -70px;
+  }
+}
+#nonotif{
+  font-size: 25px;
+  text-align: center;
+  color: #717171;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 3vh;
+}
+#nobell{
+  font-size: 70px;
+  text-align: center;
+  margin-top: 33vh;
+  margin-left: 40vw;
+}
